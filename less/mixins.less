@@ -1,0 +1,31 @@
+// Mixins Here
+
+.flexRow(@justify; @align){
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.flexCol(@justify; @align){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.button(@border; @padding; @bg; @color){
+    border: @border;
+    padding: @padding;
+    border-radius: 2%;
+    background-color: @bg;
+    color: @color;
+    &:hover{
+        background-color: @color;
+        color: @bg;
+    }
+}
+
+.centermargin(){
+    margin-left: auto;
+    margin-right: auto;
+}
